@@ -9,6 +9,21 @@ export const registerUser = async (req, res) => {
       return res.status(400).json({ message: "All fields are required" });
     }
 
+    // Normalize input
+    name = name.trim();
+    email = email.toLowerCase().trim();
+
+    // Email format validation
+    const emailRegex = /^\S+@\S+\.\S+$/;
+    if (!emailRegex.test(email)) {
+      return res.status(400).json({ message: "Invalid email format" });
+    }
+
+    // Password validation
+    if (password.length < 6) {
+      return res.status(400).json({ message: "Password must be at least 6 characters" });
+    }
+    
     // check if user exists
     const userExists = await User.findOne({ email });
     if (userExists) {
