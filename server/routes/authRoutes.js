@@ -1,15 +1,17 @@
-const express = require('express');
-const router = express.Router();
-const { registerUser, loginUser } = require('../controllers/authController');
-const authMiddleware = require('../middleware/authMiddleware'); // Guard ko bulao
+import express from "express";
+import { registerUser, loginUser } from '../controllers/authController.js';
+import authMiddleware from "../middleware/authMiddleware.js";
 
-// Purane Routes
+const router = express.Router();
+
+// const {
+//     registerUser,
+//     loginUser
+// } = require('../controllers/authController');
+
+// Routes
 router.post('/register', registerUser);
 router.post('/login', loginUser);
+// router.get('/profile', authMiddleware, getProfile);
 
-// NAYA: Protected Route (Day 5 Test)
-router.get('/profile', authMiddleware, (req, res) => {
-    res.json({ message: "Welcome to your protected profile! 🛡️", user: req.user });
-});
-
-module.exports = router;
+export default router;
