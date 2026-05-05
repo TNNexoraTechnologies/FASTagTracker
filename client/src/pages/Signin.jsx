@@ -1,17 +1,20 @@
-import "./Signin.css";
+import "../styles/Signin.css";
 import {Link} from "react-router-dom";
+import logo from "../assets/Track.png";
 function Signin() {
   return (
-    <div className="container">
- <p className="back"><a href="#">← Back to home</a></p>
+    <div className="container-1">
+ 
+ 
 
-
-      <div className="card">
+      <div className="card-1">
         
 
         <div className="logoBox">
-          <div className="logo">⚡</div>
-          <h2>TagPulse</h2>
+          <div className="logo">
+            <img src={logo} alt="logo" />
+          </div>
+         
         </div>
 
         <h1>Welcome back</h1>

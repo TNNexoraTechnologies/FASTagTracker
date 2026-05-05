@@ -3,5 +3,17 @@
   padding: 0;
   box-sizing: border-box;
   font-family: sans-serif;
+  color: inherit;
+
 }
 
+.container {
+  max-width: 1250px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+body
+{
+  background-color: #fff;
+   
+}

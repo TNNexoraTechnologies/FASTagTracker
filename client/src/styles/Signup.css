@@ -14,17 +14,18 @@
 }
 
 .signup-card {
-  width: 450px;
-  height: 510px;
-  background:white;
-  padding: 25px;
-  border-radius: 16px;
-  box-shadow: 0 10px 30px rgba(0,0,0,1);
+     width: 472px;
+    height: 560px;
+    background: white;
+    padding: 25px;
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 1);
 }
 .signup-card h3{
-    color: black;
-    margin-top: 15px;
-    
+        color: black;
+    margin-top: 16px;
+    font-size: 28px;
+    margin-bottom: 13px;
 }
 
 .logo-row {
@@ -33,22 +34,17 @@
   gap: 10px;
 }
 
-.logo-box {
-  background: #6c63ff;
-  color: white;
-  padding: 6px;
-  border-radius: 6px;
-}
+
 .logo-row h2
 {
     color: black;
 }
 
 .subtext {
-  font-size: 13px;
-  color: black;
-  margin-top: 10px;
-  margin-bottom: 15px;
+     font-size: 15px;
+    color: black;
+    margin-top: 10px;
+    margin-bottom: 21px;
 }
 
 label {
@@ -71,7 +67,7 @@ input {
   color: black;
 }
 
-.icon {
+.icon-1 {
   position: absolute;
   right: 10px;
   top: 50%;
@@ -100,8 +96,15 @@ input {
 
 }
 .bottom a{
-    color:#6c63ff;
+   color: #6c63ff;
     margin-left: 5px;
     text-decoration: none;
     font-weight: 500;
+    margin-left: 10px;
+}
+
+.bottom p{
+  color: black;
+    text-align: center;
+    margin-right: 30px;
 }
